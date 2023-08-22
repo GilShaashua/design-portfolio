@@ -1,0 +1,59 @@
+.app-header {
+    background-color: $clr1;
+    height: 5em;
+    color: $clr3;
+
+    .app-header-inner-container {
+        column-gap: em(40px);
+
+        .logo {
+            cursor: pointer;
+
+            h1 {
+                font-size: em(30px);
+                font-weight: 400;
+            }
+        }
+
+        nav {
+            & > *:not(:last-child) {
+                margin-inline: 1em;
+            }
+        }
+
+        button {
+            border-radius: 555px;
+            border: 1px solid $clr3;
+            height: em(48px);
+            width: em(153px);
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 10;
+                color: $clr3;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    nav {
+        font-size: 0.8em;
+
+        a {
+            color: $clr3;
+
+            &.active {
+                color: $clr3;
+                text-decoration: underline;
+            }
+
+            &:hover {
+                transform: scale(102%);
+                transition: transform 0.2s ease-in-out;
+            }
+        }
+    }
+}
