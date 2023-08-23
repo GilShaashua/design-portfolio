@@ -1,10 +1,11 @@
 .app-footer {
-    background-color: $clr8;
+    background-color: $clr1;
     height: 4em;
-    color: $clr2;
+    color: $clr3;
 
     .footer-inner-container {
         p {
+            font-size: em(14px);
         }
     }
 }

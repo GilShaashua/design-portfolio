@@ -2,6 +2,9 @@
     background-color: $clr1;
     height: 5em;
     color: $clr3;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
     .app-header-inner-container {
         column-gap: em(40px);
@@ -10,14 +13,34 @@
             cursor: pointer;
 
             h1 {
-                font-size: em(30px);
+                font-size: em(28px);
                 font-weight: 400;
+            }
+
+            &:hover {
+                color: $clr5;
             }
         }
 
         nav {
             & > *:not(:last-child) {
-                margin-inline: 1em;
+                margin-inline-end: 1em;
+            }
+
+            a {
+                display: flex;
+
+                svg {
+                    width: 2em;
+
+                    &:hover {
+                        cursor: pointer;
+
+                        path {
+                            fill: $clr5;
+                        }
+                    }
+                }
             }
         }
 

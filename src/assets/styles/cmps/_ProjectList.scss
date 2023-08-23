@@ -4,7 +4,7 @@
     &.card-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 15px;
+        grid-gap: 10px;
     }
 
     img {
@@ -12,7 +12,13 @@
     }
 
     .project-preview {
-        cursor: pointer;
+        background-color: #fff;
+        transition: opacity ease-in-out 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
     }
 }
 
@@ -21,7 +27,7 @@
         &.card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            grid-gap: 15px;
+            grid-gap: 10px;
         }
 
         img {
